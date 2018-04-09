@@ -1,2 +1,2 @@
 # Sielovra
-Sielo rond and trensparent theme by Dregni Slovra
+Sielo round and trensparent theme by Dregni Slovra
