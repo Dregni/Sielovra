@@ -17,6 +17,15 @@ QSplitter {
 	border-radius: 10px;
 }
 
+#bookmarks-bar {
+	background: scolor(main, normal, 50);
+	border: 5px solid black;
+}
+
+#bookmarks-bar QToolButton {
+	background: scolor(accent, normal, 100);
+}
+
 QTabBar {
 }
 
@@ -35,7 +44,7 @@ QTabBar::tab:selected
 
 QTabBar::tab:!selected:hover
 {
-    background: scolor(second, light, 150) repeat-x;
+	background: scolor(second, light, 150) repeat-x;
 }
 
 #highlighted-new-tabsspace
@@ -45,20 +54,20 @@ QTabBar::tab:!selected:hover
 
 #fbutton-root
 {
-    sproperty-icon: url(images/icon.png);
-    sproperty-iconSize: 24px;
-    border-radius: 5px;
-    margin: 3px;
-    background-color: scolor(main, light, 100);
+	sproperty-icon: url(images/icon.png);
+	sproperty-iconSize: 24px;
+	border-radius: 5px;
+	margin: 3px;
+	background-color: transparent;
 }
 
 #fbutton-add-bookmark
 {
-    sproperty-icon: url(images/add-bookmark.png);
-    sproperty-iconSize: 24px;
-    border-radius: 5px;
-    margin: 3px;
-    background-color: scolor(second, light, 100);
+	sproperty-icon: url(images/add-bookmark.png);
+	sproperty-iconSize: 24px;
+	border-radius: 5px;
+	margin: 3px;
+	background-color: scolor(second, light, 100);
 }
 
 #fbutton-add-bookmark:pressed
@@ -68,58 +77,72 @@ QTabBar::tab:!selected:hover
 
 #fbutton-view-bookmarks
 {
-    sproperty-icon: url(images/view-bookmarks.png);
-    sproperty-iconSize: 24px;
-    border-radius: 5px;
-    margin: 3px;
-    background-color: scolor(second, normal, 100);
+	sproperty-icon: url(images/view-bookmarks.png);
+	sproperty-iconSize: 24px;
+	border-radius: 5px;
+	margin: 3px;
+	background-color: scolor(second, normal, 100);
 }
 
 #fbutton-view-bookmarks:pressed
 {
-    background-color: scolor(second, normal, 200);
+	background-color: scolor(second, normal, 200);
 }
 
 #fbutton-view-history
 {
-    sproperty-icon: url(images/history.png);
-    sproperty-iconSize: 24px;
-    border-radius: 5px;
-    margin: 3px;
-    background-color: rgba(0, 0, 0, 0);
+	sproperty-icon: url(images/history.png);
+	sproperty-iconSize: 24px;
+	border-radius: 5px;
+	margin: 3px;
+	background-color: scolor(second, dark, 100);
 }
 
 #fbutton-view-history:pressed
 {
-  background-color: rgb(30, 30, 30);
+	background-color: scolor(second, dark, 200);
 }
 
 #fbutton-new-window
 {
-    sproperty-icon: url(images/new-window.png);
-    sproperty-iconSize: 24px;
-    border-radius: 5px;
-    margin: 3px;
-    background-color: rgba(0, 0, 0, 0);
+	sproperty-icon: url(images/new-window.png);
+	sproperty-iconSize: 24px;
+	border-radius: 5px;
+	margin: 3px;
+	background-color: scolor(main, dark, 100);
 }
 
 #fbutton-new-window:pressed
 {
-    background-color: rgb(30, 30, 30);
+	background-color: scolor(main, dark, 200);
+}
+
+#fbutton-new-tab
+{
+	sproperty-icon: url(images/new-tab.png);
+	sproperty-iconSize: 24px;
+	border-radius: 5px;
+	margin: 3px;
+	background-color: scolor(main, normal, 100);
+}
+
+#fbutton-new-tab:pressed
+{
+	background-color: scolor(main, normal, 200);
 }
 
 #fbutton-home
 {
-    sproperty-icon: url(images/home.png);
-    sproperty-iconSize: 24px;
-    border-radius: 5px;
-    margin: 3px;
-    background-color: rgba(0, 0, 0, 0);
+	sproperty-icon: url(images/home.png);
+	sproperty-iconSize: 24px;
+	border-radius: 5px;
+	margin: 3px;
+	background-color: scolor(main, light, 100);
 }
 
 #fbutton-home:pressed
 {
-    background-color: rgb(30, 30, 30);
+	background-color: scolor(main, light, 200);
 }
 
 #fbutton-next
@@ -128,40 +151,26 @@ QTabBar::tab:!selected:hover
 	sproperty-iconSize: 24px;
 	border-radius: 5px;
 	margin: 3px;
-	background-color: rgba(0, 0, 0, 0);
+	background-color: scolor(accent, normal, 100);
 }
 
 #fbutton-next:pressed
 {
-	background-color: rgb(30, 30, 30);
+	background-color: scolor(accent, normal, 200);
 }
 
 #fbutton-back
 {
-    sproperty-icon: url(images/back.png);
-    sproperty-iconSize: 24px;
-    border-radius: 5px;
-    margin: 3px;
-    background-color: rgba(0, 0, 0, 0);
+	sproperty-icon: url(images/back.png);
+	sproperty-iconSize: 24px;
+	border-radius: 5px;
+	margin: 3px;
+	background-color: scolor(accent, light, 100);
 }
 
 #fbutton-back:pressed
 {
-background-color: rgb(30, 30, 30);
-}
-
-#fbutton-new-tab
-{
-    sproperty-icon: url(images/new-tab.png);
-    sproperty-iconSize: 24px;
-    border-radius: 5px;
-    margin: 3px;
-    background-color: rgba(0, 0, 0, 0);
-}
-
-#fbutton-new-tab:pressed
-{
-    background-color: rgb(30, 30, 30);
+	background-color: scolor(accent, light, 200);
 }
 
 QMainWindow,
